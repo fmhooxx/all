@@ -1,0 +1,20 @@
+<template name="65fe5e80">
+  <view class="_div data-v-709571f2 container">
+    <view wx:if="{{currentMessageList.length === 0}}" class="_div data-v-709571f2">
+      <view class="_div data-v-709571f2 card"> 暂无系统消息 </view>
+    </view>
+    <view wx:key="message.ID" key="{{message.ID}}" wx:for="{{currentMessageList}}" wx:for-index="index" wx:for-item="message" class="_div data-v-709571f2">
+      <view wx:if="{{message.payload.operationType === 1}}" class="_div data-v-709571f2 card handle">
+        <view class="_div data-v-709571f2">
+          <view class="_div data-v-709571f2 time">{{message.newtime}}</view>
+          {{message.virtualDom[0].text}}
+        </view>
+        <view class="_div data-v-709571f2 choose"><button type="button" class="_button data-v-709571f2 button" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}">处理</button></view>
+      </view>
+      <view class="_div data-v-709571f2 card" wx:else>
+        <view class="_div data-v-709571f2 time">{{message.newtime}}</view>
+        {{message.virtualDom[0].text}}
+      </view>
+    </view>
+  </view>
+</template>

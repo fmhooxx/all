@@ -1,0 +1,1 @@
+<view><view style="margin-top:20rpx;"><button class="btn common" open-type="contact" data-event-opts="{{[['contact',[['handle',['$event']]]]]}}" bindcontact="__e">微信客服</button><view data-event-opts="{{[['tap',[['goMakePhoneCall',['$event']]]]]}}" class="common tel" bindtap="__e">电话客服</view></view></view>

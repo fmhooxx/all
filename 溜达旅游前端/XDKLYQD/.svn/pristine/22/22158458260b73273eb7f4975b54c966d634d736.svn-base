@@ -1,0 +1,1 @@
+<view class="set-up"><view data-event-opts="{{[['tap',[['goFeedback',['$event']]]]]}}" class="common" bindtap="__e"><view>意见反馈</view><image src="../../static/images/right-arrow.png"></image></view></view>

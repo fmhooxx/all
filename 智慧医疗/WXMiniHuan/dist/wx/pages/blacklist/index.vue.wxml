@@ -1,0 +1,15 @@
+<template name="c499e3f0">
+  <view class="_div data-v-83e0734a blacklist">
+    <view wx:if="{{blacklist.length === 0}}" class="_div data-v-83e0734a wrapper">
+      <view class="_div data-v-83e0734a none"> 你还没有拉黑任何人哦 </view>
+    </view>
+    <view class="_div data-v-83e0734a list" bindtap="handleProxy" wx:key="item.userID" key="{{item.userID}}" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{userList}}" wx:for-index="index" wx:for-item="item">
+      <view class="_div data-v-83e0734a avatar">
+        <image src="{{item.avatar || '/static/images/avatar.png'}}" style="width: 100%;height: 100%" class="_img data-v-83e0734a"></image>
+      </view>
+      <view class="_div data-v-83e0734a name">
+        {{item.nick || item.userID}}
+      </view>
+    </view>
+  </view>
+</template>

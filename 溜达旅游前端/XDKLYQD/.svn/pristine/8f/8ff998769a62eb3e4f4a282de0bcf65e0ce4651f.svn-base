@@ -1,0 +1,182 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 头部区域 */
+.order-head {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 30rpx;
+  margin-bottom: 10rpx;
+}
+.head {
+  font-size: 36rpx;
+  font-weight: 500;
+  color: #525252;
+  margin-bottom: 20rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.order-common {
+  font-size: 28rpx;
+  color: #818181;
+}
+.order-common text {
+  margin-left: 30rpx;
+}
+.order-num {
+  margin-bottom: 10rpx;
+}
+.go-data {
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 30rpx;
+  background-color: #fff;
+  margin: 20rpx 0;
+}
+/* 相同的 title */
+.order-title {
+  font-size: 32rpx;
+  color: #525252;
+  font-weight: 500;
+  margin-bottom: 20rpx;
+}
+/* 相同的 content */
+.order-content {
+  font-size: 28rpx;
+  color: #525252;
+  margin: 20rpx 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+/* 相同的 text */
+.common-text {
+  width: 82%;
+}
+.order-footer {
+  color: red;
+}
+

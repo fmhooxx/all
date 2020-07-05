@@ -1,0 +1,32 @@
+
+.list-item {
+	width: 696rpx;
+	height: 480rpx;
+	margin: 0 auto 20rpx;
+	border-radius: 10rpx;
+	background-color: #fff;
+}
+.list-item image {
+	border-radius: 10rpx 10rpx 0 0;
+	width: 696rpx;
+	height: 353rpx;
+}
+.list-item view {
+	white-space: nowrap;
+	/*一行显示*/
+	overflow: hidden;
+	/*超出部分隐藏*/
+	text-overflow: ellipsis;
+	/*用...代替超出部分*/
+}
+.title {
+	font-size: 36rpx;
+	color: #525252;
+	margin: 10rpx 0 10rpx 33rpx;
+}
+.content {
+	font-size: 22rpx;
+	color: #737C84;
+	margin-left: 22rpx;
+}
+

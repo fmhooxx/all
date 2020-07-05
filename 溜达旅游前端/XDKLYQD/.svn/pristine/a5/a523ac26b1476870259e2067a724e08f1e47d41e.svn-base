@@ -1,0 +1,186 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 登录的弹框 */
+.popup {
+  /* width: 500rpx;
+		height: 550rpx; */
+  width: 440rpx;
+  height: 465rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  padding: 34rpx 33rpx;
+  box-sizing: border-box;
+}
+.popup view {
+  text-align: center;
+}
+.popup-img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 25rpx;
+}
+.popup-img image {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+}
+.popup-title {
+  font-size: 30rpx;
+  color: #3b3b3b;
+}
+.popup-text {
+  font-size: 26rpx;
+  color: #a0a0a0;
+  margin: 20rpx 0 40rpx 0;
+}
+.popup-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.btn {
+  padding: 0;
+  line-height: 58rpx;
+  color: #fff;
+  background-color: #4eb4a0;
+  font-size: 30rpx;
+  width: 160rpx;
+  height: 58rpx;
+  line-height: 58rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  border: 1rpx solid #4eb4a0;
+}
+.btn::after {
+  width: 0;
+  height: 0;
+}
+.popup-content :nth-child(1) {
+  color: #626262;
+  background-color: #fff;
+  font-size: 30rpx;
+  width: 160rpx;
+  height: 58rpx;
+  line-height: 58rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  border: 1rpx solid #d7d7d7;
+}
+

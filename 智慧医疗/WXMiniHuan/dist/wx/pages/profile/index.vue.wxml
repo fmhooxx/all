@@ -1,0 +1,16 @@
+<template name="4bf91a58">
+  <view class="_div data-v-2b17b6b2 profile">
+    <i-cell-group class="_i-cell-group data-v-2b17b6b2">
+      <i-cell title="userID" value="{{myInfo.userID}}" value-class="cell-value" class="_i-cell data-v-2b17b6b2"></i-cell>
+      <i-cell title="头像" class="_i-cell data-v-2b17b6b2">
+        <i-avatar slot="footer" i-class="avatar" src="{{myInfo.avatar}}" class="_i-avatar data-v-2b17b6b2"></i-avatar>
+      </i-cell>
+      <i-cell title="昵称" value-class="cell-value" value="{{myInfo.nick || '暂无'}}" is-link url="../update-profile/main?type=user&key=nick" class="_i-cell data-v-2b17b6b2"></i-cell>
+      <i-cell title="个性签名" value-class="cell-value" is-link url="../update-profile/main?type=user&key=signature" class="_i-cell data-v-2b17b6b2">
+        <view slot="footer" class="_div data-v-2b17b6b2 signature">
+          {{myInfo.selfSignature || '暂无'}}
+        </view>
+      </i-cell>
+    </i-cell-group>
+  </view>
+</template>

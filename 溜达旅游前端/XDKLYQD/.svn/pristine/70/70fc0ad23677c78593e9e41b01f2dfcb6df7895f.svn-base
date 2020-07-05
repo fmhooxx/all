@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/recommend/recommend",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/me/me",
+    "pages/calendar/calendar",
+    "pages/changePassword/changePassword",
+    "pages/choice/choice",
+    "pages/company/company",
+    "pages/confirmationOrder/confirmationOrder",
+    "pages/contact/contact",
+    "pages/contentDetails/contentDetails",
+    "pages/feedback/feedback",
+    "pages/fillOrder/fillOrder",
+    "pages/footprint/footprint",
+    "pages/nickName/nickName",
+    "pages/orderDetails/orderDetails",
+    "pages/orderList/orderList",
+    "pages/paymentOrder/paymentOrder",
+    "pages/paymentResult/paymentResult",
+    "pages/setUp/setUp",
+    "pages/trip/trip",
+    "pages/refund/refund",
+    "pages/refundDetails/refundDetails",
+    "pages/agreement/agreement",
+    "pages/agreementService/agreementService",
+    "pages/agreementPrivacy/agreementPrivacy",
+    "pages/agreementKnowledge/agreementKnowledge",
+    "pages/agreementRight/agreementRight",
+    "pages/recommendList/recommendList"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "溜达溜达",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#4eb4a0",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "推荐",
+        "iconPath": "./static/images/recommend.png",
+        "selectedIconPath": "./static/images/active-recommend.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./static/images/home.png",
+        "selectedIconPath": "./static/images/active-home.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "客服",
+        "iconPath": "./static/images/zixun.png",
+        "selectedIconPath": "./static/images/active-zixun.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "./static/images/me.png",
+        "selectedIconPath": "./static/images/active-me.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap72.json"
+}

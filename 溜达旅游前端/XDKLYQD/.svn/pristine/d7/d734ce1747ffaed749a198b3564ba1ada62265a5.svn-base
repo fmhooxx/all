@@ -1,0 +1,1 @@
+<view><view class="head"><view>应付金额</view><view class="num">{{"¥"+Amount}}</view></view><view data-event-opts="{{[['tap',[['goPaymentResult',['$event']]]]]}}" class="footer" bindtap="__e">微信支付</view></view>

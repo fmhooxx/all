@@ -1,0 +1,582 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 头部照片区域 */
+.banner {
+  background-color: #fff;
+  margin-bottom: 16rpx;
+}
+.banner image {
+  height: 400rpx;
+  width: 100%;
+}
+.banner-content {
+  padding: 0 32rpx 24rpx 32rpx;
+}
+.banner-title {
+  font-size: 36rpx;
+  color: #525252;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.banner-price {
+  font-size: 40rpx;
+  color: #f0c462;
+  margin-top: 10rpx;
+}
+/* 订单相关信息 */
+.order-box {
+  width: 100%;
+  margin-bottom: 16rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 26rpx 48rpx 24rpx;
+}
+.order-box view {
+  font-size: 24rpx;
+  color: #525252;
+  margin: 7rpx 0;
+}
+.order-box text {
+  font-size: 24rpx;
+  color: #525252;
+  margin-left: 10rpx;
+}
+/* 线路特色区域 */
+.characteristic {
+  background-color: #fff;
+  padding: 22rpx 50rpx;
+  box-sizing: border-box;
+  margin-bottom: 16rpx;
+}
+.characteristic-title {
+  font-size: 30rpx;
+  color: #373737;
+  text-align: center;
+}
+/* 行程介绍区域 */
+.introduce {
+  padding: 22rpx 50rpx;
+  background-color: #fff;
+  margin-bottom: 16rpx;
+}
+.introduce-title {
+  font-size: 30rpx;
+  color: #373737;
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+.introduce-text {
+  font-size: 24rpx;
+  color: #373737;
+  text-align: center;
+}
+.introduce-content {
+  font-size: 28rpx;
+  color: #797979;
+  margin-bottom: 40rpx;
+}
+.introduce-content view {
+  margin: 8rpx;
+}
+.place {
+  color: #4eb4a0;
+}
+/* 费用介绍 */
+.cost {
+  padding: 22rpx 50rpx;
+  background-color: #fff;
+  margin-bottom: 16rpx;
+}
+.cost-title {
+  font-size: 30rpx;
+  text-align: center;
+}
+.cost-contain {
+  color: #4eb4a0;
+  font-size: 28rpx;
+}
+.cost-content {
+  font-size: 28rpx;
+  color: #797979;
+}
+.cost-content view {
+  margin: 10rpx 0;
+}
+.cost-tips {
+  font-size: 28rpx;
+  color: #4d4d4d;
+}
+.cost-tips text {
+  font-size: 28rpx;
+  color: #797979;
+}
+/* 购买须知区域 */
+.notice {
+  padding: 22rpx 50rpx;
+  background-color: #fff;
+  margin-bottom: 16rpx;
+}
+.notice-title {
+  font-size: 30rpx;
+  text-align: center;
+}
+.guarantee {
+  height: 56rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.guarantee image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.guarantee view {
+  font-size: 20rpx;
+  color: #4eb4a0;
+}
+/* 固定定位区域 */
+.location-copy {
+  width: 100%;
+  height: 98rpx;
+}
+.location {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 98rpx;
+  line-height: 98rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  background-color: #fff;
+  border-top: 1rpx solid #eee;
+}
+.location-one {
+  width: 316rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.location-one image {
+  width: 46rpx;
+  height: 46rpx;
+}
+.location-one > view {
+  font-size: 20rpx;
+  color: #737c84;
+}
+.location-two {
+  text-align: center;
+  width: 434rpx;
+  font-size: 40rpx;
+  color: #fff;
+  background-color: #f0c462;
+  padding: 0;
+  border-radius: 0;
+}
+.location-two::after {
+  width: 0;
+  height: 0;
+}
+/* 弹出层区域 */
+.box {
+  width: 448rpx;
+  height: 300rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.box-title {
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #000;
+  font-weight: 500;
+}
+.box-content {
+  font-size: 28rpx;
+  color: #acacac;
+}
+.box-footer {
+  font-size: 28rpx;
+  color: #5e6c96;
+  font-weight: 500;
+  height: 84rpx;
+  line-height: 84rpx;
+  border-top: 1rpx solid #ccc;
+}
+.common {
+  text-align: center;
+}
+.share-button {
+  position: fixed;
+  top: 30%;
+  right: 10%;
+}
+.btn {
+  width: 60rpx;
+  height: 60rpx;
+  padding: 0;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+.btn::after {
+  width: 0;
+  height: 0;
+}
+

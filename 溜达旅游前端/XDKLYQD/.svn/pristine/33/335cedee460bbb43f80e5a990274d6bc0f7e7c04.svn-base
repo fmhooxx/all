@@ -1,0 +1,1 @@
+<view><view class="success">支付成功</view><view class="footer"><view data-event-opts="{{[['tap',[['goRecommend',['$event']]]]]}}" class="one" bindtap="__e">继续逛逛</view><view data-event-opts="{{[['tap',[['goOrderList',['$event']]]]]}}" class="two" bindtap="__e">查看订单</view></view></view>

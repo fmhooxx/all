@@ -1,0 +1,363 @@
+<template>
+  <!-- 退款中页面 -->
+  <view>
+    <!-- 头部区域 -->
+    <view class="head-box">
+      <view class="head-title">{{orderDetails.ProductName}}</view>
+      <view class="head-content">
+        <view>
+          订单编号:
+          <text>{{orderDetails.OrderID}}</text>
+        </view>
+        <view>
+          下单时间:
+          <text>{{orderDetails.AddedDate}}</text>
+        </view>
+        <view>
+          出发日期:
+          <text>{{orderDetails.OpenDate}}</text>
+        </view>
+        <view>
+          商品编号:
+          <text>{{orderDetails.chanpingbianhao}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 退款原因区域 -->
+    <view class="refund">
+      <view class="refund-common">退款原因</view>
+      <textarea placeholder="请输入退款原因"
+                placeholder-class="placeholder-refund"
+                auto-height
+                v-model="refundText" />
+      <!-- <view class="refund-box"
+            @click="choice">
+        <view class="refund-reason">
+          <view>请选择退款原因</view>
+          <image :class="isFlag == true ? 'clickRotate':''"
+                 src="../../static/images/right-arrow.png"></image>
+        </view>
+        <view></view>
+      </view> -->
+    </view>
+    <!-- 退款规则 -->
+    <view class="refund-rule">
+      <view v-for="(item, index) in refundRule" :key="index">{{index+1}}、{{item.Contentss}}</view>
+    </view>
+    <!-- 退款金额 -->
+    <view class="refund-price">
+      <view class="refund-common">退款金额</view>
+      <view class="refund-footer">
+        <view v-if="orderDetails.MaxShowPrice">
+          成人
+          <text>¥{{orderDetails.MaxShowPrice}}*{{orderDetails.maxUserCount}}</text>
+        </view>
+        <view v-if="orderDetails.MinShowPrice">
+          儿童
+          <text>¥{{orderDetails.MinShowPrice}}*{{orderDetails.minUserCount}}</text>
+        </view>
+        <view class="total">
+          合计
+          <text>¥{{refundAmount}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 固定定位区域 -->
+    <view class="location-copy"></view>
+    <view class="location">
+      <button class="location-one"
+              @click="goContact">
+        <view style="height: 28rpx;">
+          <image src="/static/images/zixun.png"></image>
+        </view>
+        <view>咨询</view>
+      </button>
+      <button class="location-two"
+              @click="refund">立即退款</button>
+    </view>
+  </view>
+</template>
+
+<script>
+import { GetOrderDetails, RefundOrder, GetRefundOrderAmount, GetRefundRules } from '../api/agreement'
+export default {
+  data () {
+    return {
+      // 退款原因
+      refundText: '',
+      // 订单详情页面
+      orderDetails: '',
+      // 订单 id
+      OrderID: '',
+      // 退款 id
+      RefundRulesGroupID: '',
+      // 退款总额,
+      refundAmount: '',
+      // 退订规则
+      refundRule: ''
+    }
+  },
+  methods: {
+    refund () {
+      if (this.refundText != '') {
+        uni.showModal({
+          content: '是否确定退款?',
+          confirmColor: '#4EB4A0',
+          success: (res) => {
+            if (res.confirm) {
+              this.getRefund()
+            } else if (res.cancel) {
+
+            }
+          },
+        })
+      } else {
+        uni.showToast({
+          title: '请输入退款原因',
+          duration: 2000,
+          icon: 'none',
+          mask: true
+        });
+      }
+    },
+    // 去客服页面
+    goContact () {
+      uni.switchTab({
+        url: '/pages/contact/contact',
+      })
+    },
+    // 退款接口
+    getRefund () {
+      var result = {
+        action: 'RefundOrder',
+        OrderID: this.OrderID,
+        RefundReason: this.refundText,
+        UserID: uni.getStorageSync('UserId')
+      }
+      RefundOrder(result).then(res => {
+        if (res.data.status == 'true') {
+          uni.navigateTo({
+            url: '/pages/refundDetails/refundDetails?OrderID=' + this.OrderID + '&refundAmount=' + this.refundAmount,
+          })
+        }
+      })
+    },
+    // 获取订单中的数据
+    getOrder () {
+      var result = {
+        action: 'GetProductOrderListByPage',
+        OrderID: this.OrderID,
+        userID: uni.getStorageSync('UserId'),
+      }
+      GetOrderDetails(result).then(res => {
+        console.log(res)
+        res.data.Data.Data.forEach((item, index) => {
+          item.OpenDate = item.OpenDate.split(' ')[0]
+        })
+        this.orderDetails = res.data.Data.Data[0]
+      })
+    },
+    // 获取退款金额
+    getRefundAmount () {
+      var result = {
+        action: 'GetRefundOrderAmount',
+        userID: uni.getStorageSync('UserId'),
+        OrderID: this.OrderID,
+      }
+      GetRefundOrderAmount(result).then(res => {
+        if (res.data.status == 'true') {
+          this.refundAmount = res.data.refundAmount
+        }
+      })
+    },
+    // 获取退款规则接口
+    getRule () {
+      var result = {
+        action: 'GetRefundRules',
+        RefundRulesGroupID: this.RefundRulesGroupID
+      }
+      GetRefundRules(result).then(res => {
+        this.refundRule = res.data.Data
+      })
+    }
+  },
+  onLoad (options) {
+    console.log(options)
+    this.OrderID = options.OrderID
+    this.RefundRulesGroupID = options.RefundRulesGroupID
+    if (this.OrderID != undefined) {
+      // 获取订单中的数据
+      this.getOrder(),
+        // 获取退款金额
+        this.getRefundAmount()
+    }
+    // 获取退款规则接口
+    this.getRule()
+  }
+}
+</script>
+
+<style>
+/* 头部区域 */
+.head-box {
+  margin: 4rpx 0;
+  padding: 40rpx 0 15rpx 50rpx;
+  background-color: #fff;
+}
+.head-title {
+  font-size: 36rpx;
+  color: #525252;
+  font-weight: 500;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.head-content {
+  margin-top: 10rpx;
+}
+.head-content view {
+  font-size: 28rpx;
+  color: #818181;
+  margin: 8rpx 0;
+}
+.head-content text {
+  margin-left: 10rpx;
+}
+/* 退款原因区域 */
+.refund {
+  background-color: #fff;
+  padding: 17rpx 0 42rpx 50rpx;
+}
+.refund-common {
+  font-size: 32rpx;
+  color: #525252;
+  font-weight: 500;
+}
+.placeholder-refund {
+  font-size: 32rpx;
+  color: #c1c1c1;
+}
+.refund textarea {
+  font-size: 32rpx;
+  line-height: 50rpx;
+  width: 80%;
+  margin-top: 22rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #bfbfbf;
+  padding: 10rpx 0 10rpx 15rpx;
+}
+/* 退款原因 */
+.refund-box {
+  padding: 10rpx 15rpx 10rpx 15rpx;
+  margin-top: 20rpx;
+  width: 508rpx;
+  height: 50rpx;
+  border: 1rpx solid #979797;
+  /* box-sizing: border-box; */
+}
+.refund-reason {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.refund-reason image {
+  width: 24rpx;
+  height: 24rpx;
+  transform: rotate(90deg);
+  transition: all 1s;
+}
+.refund-reason view {
+  line-height: 50rpx;
+  font-size: 28rpx;
+  color: #c1c1c1;
+}
+.clickRotate {
+  transform: rotate(270deg) !important;
+  transition: all 1s;
+}
+/* 退款规则 */
+.refund-rule {
+  font-size: 28rpx;
+  color: #797979;
+  background-color: #fff;
+  margin: 4rpx 0;
+  padding: 19rpx 0 20rpx 50rpx;
+}
+/* 退款金额 */
+.refund-price {
+  margin-top: 4rpx;
+  background-color: #fff;
+  padding: 19rpx 0 20rpx 50rpx;
+}
+.refund-footer view {
+  font-size: 28rpx;
+  color: #525252;
+  margin: 8rpx 0;
+}
+.refund-footer text {
+  margin-left: 80rpx;
+}
+.refund-footer .total {
+  color: #d03434;
+}
+/* 固定定位区域 */
+.location-copy {
+  width: 100%;
+  height: 98rpx;
+}
+
+.location {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 98rpx;
+  line-height: 98rpx;
+  display: flex;
+  padding-top: 1rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #eee;
+}
+.location-one {
+  width: 316rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location-one image {
+  margin-top: 10rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+.location-one::after {
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  border-bottom: none;
+}
+.location-one > view {
+  font-size: 20rpx;
+  color: #737c84;
+}
+
+.location-two {
+  text-align: center;
+  width: 434rpx;
+  font-size: 40rpx;
+  color: #fff;
+  background-color: #f0c462;
+  padding: 0;
+  border-radius: 0;
+}
+
+.location-two::after {
+  width: 0;
+  height: 0;
+  border-radius: 0;
+}
+</style>

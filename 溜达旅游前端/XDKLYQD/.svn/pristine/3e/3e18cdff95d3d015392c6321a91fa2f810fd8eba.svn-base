@@ -1,0 +1,276 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 人数区域 */
+.people {
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}
+.common {
+  height: 98rpx;
+  line-height: 98rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+.warning {
+  color: red;
+}
+.people-num {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.people-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.people-class {
+  font-size: 26rpx;
+  color: #545454;
+  margin-right: 20rpx;
+}
+.children {
+  margin-left: 40rpx;
+}
+.uni-numbox {
+  width: 160rpx !important;
+  height: 50rpx !important;
+  line-height: 50rpx !important;
+}
+.uni-numbox view {
+  width: 160rpx !important;
+  height: 50rpx !important;
+  line-height: 50rpx !important;
+}
+.uni-numbox__value {
+  width: 160rpx !important;
+  height: 50rpx !important;
+  line-height: 50rpx !important;
+  font-size: 26rpx !important;
+}
+.uni-numbox__plus .uni-numbox--text {
+  color: #4eb4a0 !important;
+}
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 60rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+.footer view {
+  margin-left: 10rpx;
+  font-size: 22rpx;
+  color: red;
+}
+.footer image {
+  width: 25rpx;
+  height: 25rpx;
+}
+.next {
+  position: absolute;
+  bottom: 0;
+  height: 98rpx;
+  line-height: 98rpx;
+  text-align: center;
+  width: 100%;
+  font-size: 36rpx;
+  background-color: #f0c462;
+  color: #fff;
+}
+

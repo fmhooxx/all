@@ -1,0 +1,179 @@
+{
+    "pages": [{
+            "path": "pages/recommend/recommend",
+            "style": {}
+        },
+        {
+            "path": "pages/index/index",
+            "style": {
+                "navigationBarTitleText": "首页"
+            }
+        }, {
+            "path": "pages/login/login",
+            "style": {}
+        }, {
+            "path": "pages/me/me",
+            "style": {
+                "navigationBarTitleText": "个人中心"
+            }
+        }, {
+            "path": "pages/calendar/calendar",
+            "style": {}
+        }, {
+            "path": "pages/changePassword/changePassword",
+            "style": {
+                "navigationBarTitleText": "修改密码"
+            }
+        }, {
+            "path": "pages/choice/choice",
+            "style": {
+                "navigationBarTitleText": "选择出行时间/人数"
+            }
+        }, {
+            "path": "pages/company/company",
+            "style": {
+                "navigationBarTitleText": "填写订单"
+            }
+        }, {
+            "path": "pages/confirmationOrder/confirmationOrder",
+            "style": {
+                "navigationBarTitleText": "确认订单"
+            }
+        }, {
+            "path": "pages/contact/contact",
+            "style": {
+                "navigationBarTitleText": "客服"
+            }
+        }, {
+            "path": "pages/contentDetails/contentDetails",
+            "style": {}
+        }, {
+            "path": "pages/feedback/feedback",
+            "style": {
+                "navigationBarTitleText": "意见反馈"
+            }
+        }, {
+            "path": "pages/fillOrder/fillOrder",
+            "style": {
+                "navigationBarTitleText": "填写订单"
+            }
+        }, {
+            "path": "pages/footprint/footprint",
+            "style": {
+                "navigationBarTitleText": "我的足迹"
+            }
+        }, {
+            "path": "pages/nickName/nickName",
+            "style": {
+                "navigationBarTitleText": "用户昵称"
+            }
+        }, {
+            "path": "pages/orderDetails/orderDetails",
+            "style": {
+                "navigationBarTitleText": "订单详情"
+            }
+        }, {
+            "path": "pages/orderList/orderList",
+            "style": {
+                "navigationBarTitleText": "我的订单"
+            }
+        }, {
+            "path": "pages/paymentOrder/paymentOrder",
+            "style": {
+                "navigationBarTitleText": "支付订单"
+            }
+        }, {
+            "path": "pages/paymentResult/paymentResult",
+            "style": {
+                "navigationBarTitleText": "支付结果"
+            }
+        }, {
+            "path": "pages/setUp/setUp",
+            "style": {
+                "navigationBarTitleText": "设置"
+            }
+        }, {
+            "path": "pages/trip/trip",
+            "style": {
+                "navigationBarTitleText": "我的行程"
+            }
+        }, {
+            "path": "pages/refund/refund",
+            "style": {
+                "navigationBarTitleText": "退款中"
+            }
+        }, {
+            "path": "pages/refundDetails/refundDetails",
+            "style": {
+                "navigationBarTitleText": "退款详情"
+            }
+        }, {
+            "path": "pages/agreement/agreement",
+            "style": {
+                "navigationBarTitleText": "协议以及声明"
+            }
+        }, {
+            "path": "pages/agreementService/agreementService",
+            "style": {
+                "navigationBarTitleText": "服务协议"
+            }
+        }, {
+            "path": "pages/agreementPrivacy/agreementPrivacy",
+            "style": {
+                "navigationBarTitleText": "隐私政策"
+            }
+        }, {
+            "path": "pages/agreementKnowledge/agreementKnowledge",
+            "style": {
+                "navigationBarTitleText": "知识产权声明"
+            }
+        }, {
+            "path": "pages/agreementRight/agreementRight",
+            "style": {
+                "navigationBarTitleText": "权利声明"
+            }
+        }, {
+            "path": "pages/recommendList/recommendList",
+            "style": {
+                "navigationBarTitleText": "推荐"
+            }
+        }
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "溜达溜达",
+        "navigationBarBackgroundColor": "#fff",
+        "backgroundColor": "#ffffff"
+    },
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#4eb4a0",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [{
+                "pagePath": "pages/recommend/recommend",
+                "text": "推荐",
+                "iconPath": "./static/images/recommend.png",
+                "selectedIconPath": "./static/images/active-recommend.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "./static/images/home.png",
+                "selectedIconPath": "./static/images/active-home.png"
+            },
+            {
+                "pagePath": "pages/contact/contact",
+                "text": "客服",
+                "iconPath": "./static/images/zixun.png",
+                "selectedIconPath": "./static/images/active-zixun.png"
+            },
+            {
+                "pagePath": "pages/me/me",
+                "text": "我的",
+                "iconPath": "./static/images/me.png",
+                "selectedIconPath": "./static/images/active-me.png"
+            }
+        ]
+    }
+}

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="雄登康" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="csrf-param" content="_csrf">
+  <meta name="csrf-token"
+    content="PHxKOcBNIOy43JD2976v2j7kVnH0AV1ukeMG9KLRh-9RCT1OpgVGpYm7wL6uyvb3eqkuOLZEN1z_i3yu7Ym1lQ==">
+  <title>新闻中心</title>
+  <link rel="Shortcut Icon" href="./bitbug_favicon (5).ico">
+  <meta name=" keywords" content="雄登康网络科技，智慧医疗，网络科技，旅游">
+  <meta name="description" content="雄登康网络科技  聚焦产业互联网 创造产业新价值">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <style>
+    .removeClass {
+      right: 0;
+    }
+
+    .bodyOver {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="w1440">
+      <!--隐藏菜单-->
+      <div class="menu-handler" id="menu-handler">
+        <span class="burger burger-1 trans"></span>
+        <span class="burger burger-2 trans-fast"></span>
+        <span class="burger burger-3 trans"></span>
+      </div>
+      <div class="menuBox">
+        <ul class="navMobile">
+          <li>
+            <h5><a href="../login/login.html">首页</a></h5>
+          </li>
+          <li>
+            <h5><a href="../about/about.html">关于我们</a></h5>
+
+          </li>
+          <li>
+            <h5><a href="../news/news04.html">雄登康商城</a></h5>
+          </li>
+          <li>
+            <h5><a href="../solve/solve.html">产品解决方案</a></h5>
+
+          </li>
+          <li>
+            <h5><a href="../ask/ask.html">咨询研究</a></h5>
+
+          </li>
+
+          <li>
+            <h5><a href="../join/join.html">加入我们</a></h5>
+
+          </li>
+        </ul>
+      </div>
+      <!--隐藏菜单结束-->
+      <a href="/" target="_blank" class="logo"><img src="./upload/logo.png"></a>
+      <div class="header_right">
+        <!-- <div class="header_RT">
+          <div>
+            <input id="keys" type="text" placeholder="全站搜索">
+            <i id="lsearch"></i>
+          </div>
+          <p><a href="/" class="cur">中文</a><a href="http://en.longshine.com/" target='_blank'>EN</a></p>
+
+        </div> -->
+        <div class="header_RB ">
+          <ul>
+            <li><a href="../login/login.html">首页</a></li>
+            <li>
+              <a href="../about/about.html">关于雄登康</a>
+            </li>
+            <li class='cur'>
+              <a href="../news/news04.html">雄登康商城</a>
+            </li>
+            <li>
+              <a href="../solve/solve.html">产品解决方案</a>
+              <!-- <div class="ul_list">
+                <div class="ul_top">
+                  <div class="w1440">
+                    <p>热门产品：
+                      <a href="/product?id=916&cId=95">智慧电务云平台</a>
+                      <a href="/product?id=1059&cId=97">充电桩管理解决方案</a>
+                      <a href="/product?id=584&cId=53">用电信息采集系统</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="ul_bo w1440">
+                  <dl>
+                    <dt><a href="/solution?id=44">智能电网和公用事业</a></dt>
+                    <dd>
+                      <a href="/product?cId=52">用电营销管理</a>
+                      <a href="/product?cId=53">采集计量管理</a>
+                      <a href="/product?cId=54">客户服务管理</a>
+                      <a href="/product?cId=55">生产检修管理</a>
+                      <a href="/product?cId=57">运营监控管理</a>
+                      <a href="/product?cId=110">海外电力营销系统</a>
+                      <a href="/product?cId=58">燃气客户信息系统</a>
+                      <a href="/product?cId=96">技术平台</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><a href="/solution?id=45">云和大数据</a></dt>
+                    <dd>
+                      <a href="/product?cId=63">云服务</a>
+                      <a href="/product?cId=60">数据处理平台</a>
+                      <a href="/product?cId=59">数据可视化平台</a>
+                      <a href="/product?cId=61">物联网采集平台</a>
+                      <a href="/product?cId=62">大数据接入平台</a>
+                      <a href="/product?cId=108">视频会议系统</a>
+                      <a href="/product?cId=109">融合视频通信云平台</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><a href="/solution?id=49">数字城市</a></dt>
+                    <dd>
+                      <a href="/product?cId=85">智慧工商</a>
+                      <a href="/product?cId=86">智慧社区</a>
+                      <a href="/product?cId=87">智慧政法</a>
+                      <a href="/product?cId=88">智慧安防</a>
+                      <a href="/product?cId=89">智慧交通</a>
+                      <a href="/product?cId=90">智慧燃气</a>
+                      <a href="/product?cId=107">智慧教育</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><a href="/solution?id=46">互联网+公共服务</a></dt>
+                    <dd>
+                      <a href="/product?cId=72">商品订购</a>
+                      <a href="/product?cId=74">智能云客服</a>
+                      <a href="/product?cId=73">生活缴费平台</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><a href="/solution?id=47">新外贸和一带一路</a></dt>
+                    <dd>
+                      <a href="/product?cId=80">服茂云平台</a>
+                      <a href="/product?cId=82">产业服务平台</a>
+                      <a href="/product?cId=84">智能关务云平台</a>
+                      <a href="/product?cId=92">口岸公共服务平台</a>
+                      <a href="/product?cId=93">口岸运营服务平台</a>
+                      <a href="/product?cId=81">地方版单一窗口平台</a>
+                      <a href="/product?cId=83">外贸单证识别服务</a>
+                      <a href="/product?cId=94">中国国际贸易单一窗口标准版</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><a href="/solution?id=50">新能源物联网</a></dt>
+                    <dd>
+                      <a href="/product?cId=67">光伏云平台</a>
+                      <a href="/product?cId=70">新能源汽车</a>
+                      <a href="/product?cId=68">车桩云平台</a>
+                      <a href="/product?cId=97">充电桩管理</a>
+                      <a href="/product?cId=99"> 智能停车场</a>
+                      <a href="/product?cId=95">综合能源服务</a>
+                      <a href="/product?cId=69">分布式能源</a>
+                      <a href="/product?cId=98">智慧路灯</a>
+                      <a href="/product?cId=100">政府新能源</a>
+                      <a href="/product?cId=71">物联网终端</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><a href="/solution?id=48">工业互联网</a></dt>
+                    <dd>
+                      <a href="/product?cId=104">瀚云工业互联网平台</a>
+                      <a href="/product?cId=118">瀚云智慧农业云</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><a href="/solution?id=51">金融科技</a></dt>
+                    <dd>
+                      <a href="/product?cId=102">智能客服</a>
+                      <a href="/product?cId=101">关系网络分析</a>
+                      <a href="/product?cId=103">自助智能分析</a>
+                    </dd>
+                  </dl>
+                </div>
+              </div> -->
+            </li>
+            <li>
+              <a href="../ask/ask.html">咨询研究</a>
+            </li>
+            <!-- <li >
+    <a href="/investor">投资者关系</a>
+  </li> -->
+            <li>
+              <a href="../join/join.html">加入雄登康</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="S_banner">
+    <dl>
+      <dt>新闻中心</dt>
+      <dd>Information Centre</dd>
+    </dl>
+  </div>
+
+
+
+  <div class="S_menu">
+    <div class="w1280">
+      <p><a href="#" class="cur">新闻中心</a></p>
+      <div>
+        <span>您当前位置：</span>
+        <a href="../login/login.html">首页</a>
+        <a href="./news.html" class="cur">新闻中心</a>
+      </div>
+    </div>
+  </div>
+
+  <!--主内容开始-->
+
+  <div class="news_top w1280">
+    <h5 class="met_tit">
+      <span>消息早知道
+      </span>
+    </h5>
+   <div class="flex">
+      <a class="news_TC" href="./new02.html">
+        <i class="images"><img src="./images/yiliao2.jpg"></i>
+        <div>
+
+          <p>智慧医疗,呵护生活</p>
+
+
+        </div>
+      </a>
+      <a class="news_TC " href="./news04.html">
+        <i class="images"><img src="./images/shop.jpg"></i>
+        <div>
+
+          <p>电子商务</p>
+
+
+        </div>
+      </a>
+      <a class="news_TC " href="../news/news01.html">
+        <i class="images"><img src="./images/it.jpeg"></i>
+        <div>
+          <p>软件开发</p>
+
+        </div>
+      </a>
+      <a class="news_TC" href="news03.html">
+        <i class="images"><img src="./images/view.jpg"></i>
+        <div>
+          <p>了解更多中华文化</p>
+
+        </div>
+      </a>
+   </div>
+  </div>
+  <!-- <div id="myDiv">
+    <h2>Let AJAX change this text</h2>
+
+  </div>
+
+  <button id="btu" type="button">Change Content</button> -->
+
+  <ul class="news_bottom w1280">
+    <!-- <li>
+      <a
+        href="https://mp.weixin.qq.com/s?__biz=MzA3NzI2ODY5OA==&mid=2247483914&idx=1&sn=8a3492a105a1581aede419961217fde7&chksm=9f55d1bfa82258a9b16e43117d24a8907928277e84ccf47b307c891bffc366066818cc6eb376&token=1888988545&lang=zh_CN#rd">
+        <strong>04-08<i>2020</i></strong>
+        <div>
+          <span>世界那么大 我们一起去看看吧</span>
+          <p>如果,你想体验海子“面朝大海,春暖花开”的感觉,那一定要来一次石浦！
+          </p>
+          <em>MORE</em>
+        </div>
+      </a>
+    </li> -->
+    <!-- <li>
+      <a href="https://mp.weixin.qq.com/s/U79jqAo5-RKyhLzFi4N-3Q">
+        <strong>04-24<i>2020</i></strong>
+        <div>
+          <span>原来这才是国泰民安...</span>
+          <p>
+           疾控中心主任高福在采访中指出：或许到九月份，我们能有一种在紧急情况下可以使用的疫苗。
+          </p>
+          <em>MORE</em>
+        </div>
+      </a>
+    </li> -->
+    <!-- <li>
+      <a href="https://mp.weixin.qq.com/s/bZsJAAolW7nUnBH55gSMSw">
+        <strong>04-23<i>2020</i></strong>
+        <div>
+          <span>致 ：想节食的大家~</span>
+          <p>
+            神经性厌食（AN）指个体通过节食等手段，有意造成并维持体重明显低于正常标准为特征的一种进食障碍，属于精神科领域中“与心理因素相关的生理障碍”一类。
+          </p>
+          <em>MORE</em>
+        </div>
+      </a>
+    </li> -->
+    <!-- <li>
+      <a href="https://mp.weixin.qq.com/s/xUbVFGJwKJYXJEOoZa5YyA">
+        <strong>04-21<i>2020</i></strong>
+        <div>
+          <span>生生不息的文化</span>
+          <p>
+            想当初，中国文化与古埃及,、古巴比伦和古印度文化并称为人类四大古文明，代表着人类古代文明的高峰...
+          </p>
+          <em>MORE</em>
+        </div>
+      </a>
+    </li> -->
+    <!-- <li>
+      <a href="https://mp.weixin.qq.com/s/MLXws2wahljflb-eLAghsw">
+        <strong>04-22<i>2020</i></strong>
+        <div>
+          <span>接下来的日子 请善待她..</span>
+          <p>
+            一地球，万物生，地球是宇宙的一粒尘埃，却是人类的一切
+          </p>
+          <em>MORE</em>
+        </div>
+      </a>
+    </li> -->
+    <!-- <li>
+      <a href="https://mp.weixin.qq.com/s/9S60N0_OeKBPDnhR8FH6EA">
+        <strong>04-20<i>2020</i></strong>
+        <div>
+          <span>能见证历史 我很荣幸...</span>
+          <p>受美国石油市场供应严重过剩、合约即将到期等影响，纽约油价20日早盘低开，盘中持续走低，截至当天收盘，纽约商品交易所5月交货的轻质原油期货价格下跌55.90美元，收于每桶-37.63美元，跌幅为305.97%
+          </p>
+          <em>MORE</em>
+        </div>
+      </a>
+    </li> -->
+
+  </ul>
+  <div class="w1200">
+    <div class="page">
+
+    </div>
+    <div class="footer">
+      <div class="w1440">
+        <div class="footop">
+          <dl>
+            <dt>关于雄登康</dt>
+            <dd>
+              <a>雄登康是中国聚合互联网技术公司,由张慈化先生于2020
+                年01月创立,公司一直秉持“正心”和“创新”的理念，为用户提供各类优质服务。目前，雄登康业务涵盖互联网技术、电商、新闻门户、邮箱、文化娱乐、在线教育、企业服务、工具应用等，是目前中国最大的互联网公司之一,
+                覆盖超过9亿的用户。</a>
+
+            </dd>
+          </dl>
+          <!-- <dl>
+                    <dt>新闻中心</dt>
+                    <dd>
+                        <a href="/news">新闻中心</a>
+                    </dd>
+                </dl> -->
+          <!-- <dl>
+                    <dt>产品解决方案</dt>
+                    <dd>
+                        <a href="/solution?id=44">智能电网和公用事业</a>
+                        <a href="/solution?id=45">云和大数据</a>
+                        <a href="/solution?id=49">数字城市</a>
+                        <a href="/solution?id=46">互联网+公共服务</a>
+                        <a href="/solution?id=47">新外贸和一带一路</a>
+                        <a href="/solution?id=50">新能源物联网</a>
+                        <a href="/solution?id=48">工业互联网</a>
+                        <a href="/solution?id=51">金融科技</a>
+                    </dd>
+                </dl> -->
+          <!-- <dl>
+                    <dt>咨询研究</dt>
+                    <dd>
+                        <a href="/consult?id=12">业务咨询</a>
+                        <a href="/consult?id=13">管理咨询</a>
+                        <a href="/consult?id=14">信息化咨询</a>
+                        <a href="/consult?id=15">业务研究</a>
+                        <a href="/consult?id=16">技术研究</a>
+                    </dd>
+                </dl> -->
+          <!-- <dl>
+    <dt>投资者关系</dt>
+    <dd>
+            <a href="/investor?id=20">定期公告</a>
+            <a href="/investor?id=22">公司治理</a>
+            <a href="http://irm.cninfo.com.cn/ssessgs/S300682/index.html">投资者问答</a>
+        </dd>
+</dl> -->
+          <dl class="footer_dl">
+            <dt>联系我们</dt>
+            <dd>
+              <!-- <a href="./login.html" id="handle">工作在雄登康</a> -->
+              <!-- <a href="#">手机:</a>
+                        <a href="#">电话:</a>
+                        <a href="#">地址:</a>
+                        <a href="#">邮编:</a> -->
+              <a>手机:15957518931</a>
+
+              <a>地址: 浙江省诸暨市陶朱街道祥云路16号富润大厦18楼</a>
+              <a>邮编:311801</a>
+
+            </dd>
+          </dl>
+          <p class="footer_p"><img src="./images/wechat.jpg">关注微信公众号</p>
+        </div>
+        <div class="footen">
+          <p>© 2018-2020 雄登康网络科技公司 版权所有. &nbsp;&nbsp;
+           
+          </p>
+          <div>
+         
+          <div>
+            <a>网站地图</a>
+            <a>法律声明</a>
+            <a>联系我们</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../login/js/jquery.js"></script>
+    <script>
+      $ (function(){
+        getNews()
+      });
+      var newsList =[]
+      function getNews() {
+        $.ajax({
+          url:'http://192.168.1.165:34668/api/OrdersAPI.ashx',
+          type:'post',
+          // async:false,
+          data:{
+            action:'ReadCompanyIntro'
+          },
+           dataType:'json',
+          success:res=>{
+            console.log(res)
+            if(res.status == true){
+              res.data.forEach(element => {
+                element.IntroDate = element.IntroDate.substring(0, 9)
+              });
+              this.newsList = res.data
+              console.log(this.newsList)
+              for( var i=0; i<this.newsList.length;i++){
+                var myli =`
+                <li>
+                  <a href="${this.newsList[i].IntroImg}">
+                   <span class="aboutdate">${this.newsList[i].IntroDate}</span>
+                   <div>
+                    <span>${this.newsList[i].IntroTitle}</span>
+                    <p>${this.newsList[i].Intro}
+                      </p>
+                      <em>MORE</em>
+                      </div>
+                      </a>
+                      </li>
+                `
+                 $('.news_bottom').append(myli);
+              }
+            }
+
+          }
+          
+        })
+      }
+      // $(function(){
+      //   // 获取新闻数据
+      //   getNews()
+      // });
+      // // 新闻列表数据
+      // var newsList = []
+      // // 获取新闻数据
+      // function getNews() {
+      //   $.ajax({
+      //     url: 'http://192.168.1.165:34668/api/OrdersAPI.ashx',
+      //     type: 'post',
+      //     data: {
+      //       action: 'ReadCompanyIntro'
+      //     },
+      //     dataType: 'json',
+      //     success: res => {
+      //       // console.log(res)
+      //       if (res.status == true) {
+      //         res.data.forEach(item => {
+      //           item.IntroDate = item.IntroDate.substring(0, 9)
+      //         })
+      //         this.newsList = res.data
+      //         console.log(this.newsList)
+      //         for (var i = 0; i < this.newsList.length; i++) {
+      //           var myli = `
+      //             <li>
+      //               <a href="${this.newsList[i].IntroImg}">
+      //               <span class="aboutdate">${this.newsList[i].IntroDate}</span>
+      //               <div>
+      //                 <span>${this.newsList[i].IntroTitle}</span>
+      //                 <p>${this.newsList[i].Intro}</P>
+      //                 <em>MORE</em>
+      //               </div>
+      //               </a>
+      //             </li>
+      //           `
+      //           $('.news_bottom').append(myli)
+      //         }
+      //       }
+      //     }
+      //   })
+      // }
+      var menuHandler = document.getElementById('menu-handler')
+      var menuBox = document.getElementsByClassName('menuBox')[0]
+      var bodyBox = document.body
+      var flag = true
+      var btu=document.getElementById('btu')
+      menuHandler.addEventListener('click', () => {
+        bodyBox.classList.add('bodyOver')
+        if (flag) {
+          menuBox.classList.add('removeClass')
+          flag = false
+        } else {
+          menuBox.classList.remove('removeClass')
+          flag = true
+        }
+      })
+      $(document).ready(function(){
+      $("#b01").click(function(){
+      htmlobj=$.ajax({url:"https://hao.360.com/?a1004",async:false});
+      $("#myDiv").html(htmlobj.responseText);
+      });
+      });
+      // btu.onclick =function(){
+      //   alert(111)
+      // }
+      $("")
+      //  onclick(function () {
+      //   $.ajax({
+      //   url: '/jq_ajax_post',
+      //   type: 'post',
+      //   data: 'id=1111',
+      //   success: function (data) {
+      //   alert(data);
+      //   },
+      //   // async:false,
+      //   });
+      //   // alert(22); //检验同步异步
+      //   });
+    </script>
+
+</body>
+
+</html>

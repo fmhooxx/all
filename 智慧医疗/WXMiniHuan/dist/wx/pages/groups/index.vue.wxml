@@ -1,0 +1,12 @@
+<template name="d19b8836">
+  <view class="_div data-v-0e2db728 container">
+    <view class="_div data-v-0e2db728 group" wx:key="item.groupID" key="{{item.groupID}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{groupList}}" wx:for-index="index" wx:for-item="item">
+      <view class="_div data-v-0e2db728 avatar">
+        <i-avatar i-class="img" src="{{item.avatar}}" class="_i-avatar data-v-0e2db728"></i-avatar>
+      </view>
+      <view class="_div data-v-0e2db728 name">
+        {{item.name}}
+      </view>
+    </view>
+  </view>
+</template>

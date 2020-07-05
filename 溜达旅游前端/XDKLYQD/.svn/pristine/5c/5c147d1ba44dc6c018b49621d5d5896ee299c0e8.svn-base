@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "选择出行时间/人数",
+  "usingComponents": {
+    "uni-calendar": "/components/uni-calendar/uni-calendar",
+    "uni-number-box": "/components/uni-number-box/uni-number-box"
+  }
+}

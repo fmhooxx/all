@@ -1,0 +1,27 @@
+
+.head {
+  width: 100%;
+  height: 228rpx;
+  padding-top: 60rpx;
+  text-align: center;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.num {
+  margin-top: 20rpx;
+}
+.head view {
+  font-size: 40rpx;
+  color: #525252;
+}
+.footer {
+  margin: 20rpx auto;
+  font-size: 40rpx;
+  color: #fff;
+  width: 690rpx;
+  height: 85rpx;
+  line-height: 85rpx;
+  text-align: center;
+  background-color: #f0c462;
+}
+

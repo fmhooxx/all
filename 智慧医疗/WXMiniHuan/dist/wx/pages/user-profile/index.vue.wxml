@@ -1,0 +1,24 @@
+<template name="1e9ee5b8">
+  <view class="_div data-v-20ac2abf container">
+    <view class="_div data-v-20ac2abf info-card">
+      <i-avatar i-class="avatar" src="{{userProfile.avatar}}" class="_i-avatar data-v-20ac2abf"></i-avatar>
+      <view class="_div data-v-20ac2abf basic">
+        <view class="_div data-v-20ac2abf username">{{userProfile.nick || '未设置'}}</view>
+        <view class="_div data-v-20ac2abf user-id">用户ID：{{userProfile.userID}}</view>
+      </view>
+    </view>
+    <i-cell-group i-class="cell-group" class="_i-cell-group data-v-20ac2abf">
+      <i-cell title="个性签名" class="_i-cell data-v-20ac2abf">
+        <view slot="footer" class="_div data-v-20ac2abf signature">
+          {{userProfile.selfSignature || '暂无'}}
+        </view>
+      </i-cell>
+    </i-cell-group>
+    <i-cell-group i-class="cell-group" class="_i-cell-group data-v-20ac2abf">
+      <i-cell title="加入黑名单" class="_i-cell data-v-20ac2abf">
+        <switch slot="footer" color="#006fff" checked="{{isInBlacklist}}" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_switch data-v-20ac2abf" />
+      </i-cell>
+    </i-cell-group>
+    <view class="_div data-v-20ac2abf action-list" style=" {{('margin-bottom:' + (isIphoneX ? '34px' : 0) + ';')}}"><button class="_button data-v-20ac2abf video-call" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"> 音视频通话 <view class="_div data-v-20ac2abf new-badge">NEW</view></button> <button class="_button data-v-20ac2abf send-messsage" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">发送消息</button></view>
+  </view>
+</template>

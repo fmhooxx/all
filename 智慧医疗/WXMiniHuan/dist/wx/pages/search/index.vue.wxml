@@ -1,0 +1,7 @@
+<template name="ab3de28e">
+  <view class="_div data-v-0c17f740 container">
+    <view class="_div data-v-0c17f740 search-bar">
+      <image src="/static/images/search.png" class="_img data-v-0c17f740"></image> <input value="{{ID}}" bindinput="handleProxy" focus="{{true}}" confirm-type="search" placeholder="{{placeholder}}" bindconfirm="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-0c17f740" />
+    </view> <button bindtap="handleProxy" loading="{{loading}}" hidden="{{!(searched)}}" hover-class="clicked" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-0c17f740">{{buttonText}}</button>
+  </view>
+</template>

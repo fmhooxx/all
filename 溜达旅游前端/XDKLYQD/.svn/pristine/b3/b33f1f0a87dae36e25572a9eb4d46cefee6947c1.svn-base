@@ -1,0 +1,6 @@
+
+.box {
+  padding: 30rpx;
+  background-color: #fff;
+}
+

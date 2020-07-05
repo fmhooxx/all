@@ -1,0 +1,14 @@
+<template name="d98a8858">
+  <view class="_div data-v-736fc727 counter-warp">
+    <view class="_div data-v-736fc727 header">
+      <view class="_div data-v-736fc727 header-content">
+        <image src="/static/images/im.png" class="_img data-v-736fc727 icon"></image>
+        <view class="_div data-v-736fc727 text">
+          <view class="_div data-v-736fc727 text-header">登录 · 即时通信</view>
+          <view class="_div data-v-736fc727 text-content">体验群组聊天，视频对话等IM功能</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-736fc727 picker"><input type="text" value="{{userId}}" bindinput="handleProxy" placeholder="请输入userID" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-736fc727" /></view> <button hover-class="clicked" loading="{{loading}}" class="_button data-v-736fc727 login-button" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">登录</button>
+  </view>
+</template>

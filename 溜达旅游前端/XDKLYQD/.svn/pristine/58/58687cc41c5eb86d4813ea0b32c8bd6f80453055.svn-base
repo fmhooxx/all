@@ -1,0 +1,22 @@
+
+.btn {
+  border-radius: 0;
+}
+.btn::after {
+  border: none;
+  border-radius: 0;
+}
+.common {
+  font-size: 32rpx;
+  color: #737c84;
+  width: 700rpx;
+  height: 98rpx;
+  background-color: #fff;
+  box-shadow: 0rpx 9rpx 16rpx 0rpx rgba(234, 234, 234, 0.5);
+}
+.tel {
+  line-height: 98rpx;
+  text-align: center;
+  margin: 20rpx auto;
+}
+

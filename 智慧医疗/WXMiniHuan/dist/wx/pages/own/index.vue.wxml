@@ -1,0 +1,22 @@
+<template name="51e2c21e">
+  <view class="_div data-v-575063c4 container">
+    <view class="_div data-v-575063c4 info-card">
+      <image class="_image data-v-575063c4 avatar" src="{{myInfo.avatar || '/static/images/avatar.png'}}"></image>
+      <view class="_div data-v-575063c4 basic">
+        <view class="_div data-v-575063c4 username">{{myInfo.nick || '未设置'}}</view>
+        <view class="_div data-v-575063c4 user-id">用户ID：{{myInfo.userID}}</view>
+      </view>
+    </view>
+    <i-cell-group i-class="cell-group" class="_i-cell-group data-v-575063c4">
+      <i-cell title="个性签名" class="_i-cell data-v-575063c4">
+        <view slot="footer" class="_div data-v-575063c4 signature">
+          {{myInfo.selfSignature || '暂无'}}
+        </view>
+      </i-cell>
+    </i-cell-group>
+    <i-cell-group i-class="cell-group" class="_i-cell-group data-v-575063c4">
+      <i-cell title="修改资料" is-link url="../profile/main" class="_i-cell data-v-575063c4"></i-cell>
+      <i-cell title="退出登录" i-class="logout" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_i-cell data-v-575063c4"></i-cell>
+    </i-cell-group>
+  </view>
+</template>

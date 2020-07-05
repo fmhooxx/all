@@ -1,0 +1,515 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 每个单独的盒子区域 */
+.list-item {
+  width: 100%;
+  box-sizing: border-box;
+}
+.item-title {
+  font-size: 36rpx;
+  color: #545454;
+  margin: 20rpx;
+}
+.item-common {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding: 30rpx;
+}
+.placeholder-common {
+  font-size: 26rpx;
+  color: #8e8e8e;
+}
+/* 姓名区域 */
+.uname-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin: 20rpx 0;
+}
+.uname-box > view {
+  font-size: 26rpx;
+  color: #525252;
+}
+.uname-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.uname-content input {
+  border: 1rpx solid #e5e5e5;
+  padding: 8rpx;
+}
+.uname-content view {
+  width: 34%;
+  font-size: 28rpx;
+  color: #525252;
+}
+/* 性别区域 */
+.gender-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 28rpx;
+  color: #525252;
+}
+.gender-box > view {
+  margin-right: 40rpx;
+}
+.gender {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.gender view {
+  font-size: 28rpx;
+  color: #525252;
+}
+.gender input {
+  border: 1rpx solid #e5e5e5;
+  padding: 8rpx;
+  width: 82%;
+  font-size: 26rpx;
+  color: #525252;
+}
+.gender text {
+  margin: 0 10rpx;
+}
+/* 身份证区域 */
+.card-box {
+  margin-top: 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.card-box view {
+  margin-right: 12rpx;
+  font-size: 28rpx;
+  color: #525252;
+}
+.card-box input {
+  font-size: 26rpx;
+  color: #525252;
+  border: 1rpx solid #e5e5e5;
+  padding: 8rpx;
+  width: 82%;
+}
+.next {
+  position: fixed;
+  bottom: 0;
+  height: 98rpx;
+  line-height: 98rpx;
+  text-align: center;
+  width: 100%;
+  font-size: 36rpx;
+  background-color: #fff;
+  /* background-color: #f0c462; */
+  /* color: #fff; */
+  color: #525252;
+  z-index: 999;
+  border-radius: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-top: 1rpx solid #eee;
+  padding: 0;
+}
+.next > view {
+  width: 50%;
+}
+.next::after {
+  border: none;
+  border-radius: 0;
+}
+.next-price {
+  font-size: 36rpx;
+  color: red;
+  border-right: 1rpx solid #eee;
+}
+.next-text {
+  background-color: #f0c462;
+  color: #fff;
+  font-size: 36rpx;
+}
+.shelter {
+  width: 100%;
+  height: 98rpx;
+}
+/* 增加 */
+.add-reduce {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+.reduce {
+  margin-top: 20rpx;
+}
+.add {
+  margin: 20rpx 30rpx;
+}
+.reduce .reduce-text {
+  color: red;
+  border: 2rpx solid red;
+}
+.add-reduce-text {
+  font-size: 28rpx;
+  color: #4eb4a0;
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border: 2rpx solid #4eb4a0;
+  text-align: center;
+  border-radius: 10rpx;
+}
+/* 预订人信息区域 */
+.reserve {
+  box-sizing: border-box;
+  padding: 30rpx;
+  background-color: #fff;
+}
+.reserve-title {
+  font-size: 36rpx;
+  color: #545454;
+}
+.reserve-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 20rpx 0;
+}
+.reserve-content input {
+  width: 81%;
+  padding: 8rpx;
+  font-size: 26rpx;
+  color: #525252;
+  border: 1rpx solid #e5e5e5;
+}
+.reserve-content view {
+  font-size: 26rpx;
+  color: #525252;
+}
+
